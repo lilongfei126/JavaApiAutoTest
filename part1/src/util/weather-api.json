@@ -1,0 +1,43 @@
+[
+  {
+    "description": "带参数的Get请求",
+    "request": {
+      "uri": "/getWeathers",
+      "method": "get",
+      "queries": {
+        "username": "util",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;chartset:utf-8"
+      },
+      "text": "this is a get request with  parmeters"
+    }
+  },
+  {
+    "description": "这是一个不带参数的GET请求",
+    "request": {
+      "uri": "/getWeathernoParmeters",
+      "method": "get"
+    },
+    "response": {
+        "headers": {
+          "Content-Type": "text/html;charset:utf-8"
+        },
+
+      "json": {
+        "state": "200",
+        "result": "sucess",
+        "city": "beijing",
+        "date": "2020-02-15",
+        "weather": "fine",
+        "temperature":"-6~2℃",
+        "wind": "4~5rank"
+
+      }
+    }
+  }
+
+]
